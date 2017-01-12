@@ -6,7 +6,7 @@
 #    By: ekelen <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 18:23:23 by ekelen            #+#    #+#              #
-#    Updated: 2016/12/26 17:26:58 by ekelen           ###   ########.fr        #
+#    Updated: 2017/01/12 12:45:08 by ekelen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -59,15 +59,27 @@ SRC += ft_isprint.c
 # PART II                                                                      #
 # **************************************************************************** #
 SRC += ft_memalloc.c
+	# mallocs fresh memory area, initialized to 0. if fails, returns null. takes size of mem to be allocated. 
+	# returns allocated memory area.
 SRC += ft_memdel.c
+	# frees memory area, then sets ptr to that area to NULL. returns void.
 SRC += ft_strnew.c
+	# mallocs fresh string of t_size size, terminated by \0. all chars initialized to \0. returns this string.
+	# uses memset to put null chars in string.
 SRC += ft_strdel.c
+	# frees address of string; sets pointer to string to null.
 SRC += ft_strclr.c
+	# sets all chars in string to \0. returns void.
 SRC += ft_striter.c
+	# Applies the function f to each character of the string passed as argument.
 SRC += ft_striteri.c
+	# Does something to index and char of a string.
 SRC += ft_strmap.c
+	# Creates a fresh string resulting from successive applications of (*f) to each character. Returns fresh string.
 SRC += ft_strmapi.c
+	# Same as above, but also passes index.
 SRC += ft_strequ.c
+	# Compares s1 and s2; if they are identical returns 1, otherwise 0.
 SRC += ft_strnequ.c
 SRC += ft_strsub.c
 SRC += ft_strjoin.c

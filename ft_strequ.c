@@ -20,3 +20,7 @@ int		ft_strequ(char const *s1, char const *s2)
 		return (1);
 	return (0);
 }
+
+/*
+** Compares s1 and s2; returns 1 if equal, or 0 otherwise.
+*/

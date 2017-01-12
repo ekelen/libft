@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 10:13:52 by ekelen            #+#    #+#             */
-/*   Updated: 2016/12/09 16:13:05 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/01/12 12:45:00 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,3 +26,7 @@ void	ft_strclr(char *s)
 		}
 	}
 }
+
+/*
+** Sets all chars in string to \0. Returns void.
+*/

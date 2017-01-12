@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 09:06:54 by ekelen            #+#    #+#             */
-/*   Updated: 2016/12/08 20:31:16 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/01/12 12:37:51 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,3 +29,18 @@ void	*ft_memalloc(size_t size)
 	(*(char *)mem_area) = '\0';
 	return (mem_area);
 }
+
+/*
+Description:
+
+Allocates (with malloc(3)) and returns a “fresh” memory area. The memory allocated is initialized to 0. If the allocation fails, the function returns NULL.
+
+Param. #1
+The size of the memory that needs to be allocated.
+
+Return value
+The allocated memory area.
+
+Libc functions
+malloc(3)
+*/

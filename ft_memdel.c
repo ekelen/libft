@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/02 15:51:55 by ekelen            #+#    #+#             */
-/*   Updated: 2016/12/08 21:00:40 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/01/12 12:39:05 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,3 +20,7 @@ void	ft_memdel(void **ap)
 	*ap = NULL;
 	return ;
 }
+
+/*
+ * frees memory area, then sets ptr to that area to NULL.
+ */
