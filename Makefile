@@ -6,7 +6,7 @@
 #    By: ekelen <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 18:23:23 by ekelen            #+#    #+#              #
-#    Updated: 2017/02/22 14:17:38 by ekelen           ###   ########.fr        #
+#    Updated: 2017/02/22 14:42:30 by ekelen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -102,10 +102,14 @@ SRC += ft_extra_abs.c
 SRC += ft_extra_isspace.c
 SRC += ft_extra_lstprint.c
 SRC += ft_extra_max.c
+SRC += ft_strmapnew.c
 
 OBJ = $(SRC:.c=.o)
 
 all: $(NAME)
+
+bin:
+	$(CC) main.c -L./ $(NAME) -lft
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)

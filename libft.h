@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 09:33:40 by ekelen            #+#    #+#             */
-/*   Updated: 2016/12/10 16:31:23 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/02/22 14:42:45 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,6 +87,6 @@ int				ft_extra_abs(int nbr);
 int				ft_extra_isspace(int c);
 void			ft_extra_lstprint(t_list *lst);
 int				ft_extra_max(int *tab, size_t len);
-void			ft_extra_lstprint(t_list *lst);
+char			**ft_strmapnew(size_t rows, size_t columns);
 
 #endif

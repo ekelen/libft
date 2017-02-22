@@ -6,19 +6,29 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 17:55:52 by ekelen            #+#    #+#             */
-/*   Updated: 2017/02/22 14:18:33 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/02/22 14:43:57 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnew(size_t size)
+char	**ft_strmapnew(size_t rows, size_t columns)
 {
-	char *new_str;
+	char **map;
+	size_t i;
+	size_t j;
 
-	new_str = (char *)ft_memalloc(size + 1);
-	if (!new_str)
+	i = 0;
+	j = 0;
+	map = (char **)ft_memalloc((sizeof(char *) * rows + 1));
+	if (!map)
 		return (NULL);
-	ft_memset(new_str, (int)'\0', size + 1);
-	return (new_str);
+	while (i < rows)
+	{
+		*(map + i) = (char *)ft_memalloc(columns + 1);
+		ft_memset(map[i], (int)'\0', columns + 1);
+		i++;
+	}
+	*(map + i) = 0;
+	return (map);
 }
