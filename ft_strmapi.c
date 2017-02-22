@@ -30,10 +30,3 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	}
 	return (s2);
 }
-
-/*
-** Creates a fresh string resulting from successive applications
-** of (*f) to each character with index
-** also passed as an arg. 
-** Returns fresh string. Uses malloc.
-*/

@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/12/01 17:55:52 by ekelen            #+#    #+#             */
-/*   Updated: 2017/01/12 12:42:19 by ekelen           ###   ########.fr       */
+/*   Updated: 2016/12/09 16:34:38 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,3 @@ char	*ft_strnew(size_t size)
 	ft_memset(new_str, (int)'\0', size + 1);
 	return (new_str);
 }
-
-// mallocs fresh string of t_size size, terminated by \0. all chars initialized to \0.
-// uses memset to put null chars in string.

@@ -30,8 +30,3 @@ char	*ft_strmap(char const *s, char (*f)(char))
 	}
 	return (s2);
 }
-
-/*
-** Creates a fresh string resulting from successive applications
-** of (*f) to each character. Returns fresh string.
-*/

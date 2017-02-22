@@ -28,7 +28,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 	}
 	return ;
 }
-
-/*
-** Does something to index and char of a string.
-*/
