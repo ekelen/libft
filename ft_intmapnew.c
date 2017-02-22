@@ -1,32 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   ft_intmapnew.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
+/*   By: ekelen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2016/12/01 17:55:52 by ekelen            #+#    #+#             */
-/*   Updated: 2017/02/22 14:59:45 by ekelen           ###   ########.fr       */
+/*   Created: 2017/02/22 14:46:39 by ekelen            #+#    #+#             */
+/*   Updated: 2017/02/22 14:59:23 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	**ft_strmapnew(size_t rows, size_t columns)
+int		**ft_intmapnew(size_t rows, size_t columns)
 {
-	char **map;
+	int **map;
 	size_t i;
 
 	i = 0;
-	map = (char **)ft_memalloc((sizeof(char *) * rows + 1));
+	map = (int **)ft_memalloc((sizeof(int *) * rows));
 	if (!map)
 		return (NULL);
 	while (i < rows)
 	{
-		*(map + i) = (char *)ft_memalloc(columns + 1);
-		ft_memset(map[i], (int)'\0', columns + 1);
+		if(!(*(map + (int)i) = (int *)ft_memalloc((sizeof(int) * columns))))
+			return (NULL);
+		ft_memset(map[i], (int)0, columns);
 		i++;
 	}
-	*(map + i) = 0;
 	return (map);
 }
