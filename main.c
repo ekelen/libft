@@ -3,6 +3,7 @@
 int main(void)
 {
 	// DELETE THIS FILE
+	ft_err_fd(1);
 	char **new_map;
 	new_map = ft_strmapnew(5, 3);
 	int i = 0;
@@ -29,4 +30,10 @@ int main(void)
 			ft_putchar('\n');
 		i++;
 	}
+
+
+	i = 0;
+	char *str = "Constant char testing party";
+	ft_putstr("Number of spaces : \n");
+	ft_putnbr(ft_countchar(str, ' '));
 }

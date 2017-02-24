@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_intmapnew.c                                     :+:      :+:    :+:   */
+/*   ft_countchar.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: ekelen <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/02/22 14:46:39 by ekelen            #+#    #+#             */
-/*   Updated: 2017/02/22 15:05:02 by ekelen           ###   ########.fr       */
+/*   Created: 2017/02/22 21:51:45 by ekelen            #+#    #+#             */
+/*   Updated: 2017/02/22 21:55:14 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		**ft_intmapnew(size_t rows, size_t columns)
+int		ft_countchar(char *s, char c)
 {
-	int **map;
-	size_t i;
+	int char_count;
 
-	i = 0;
-	map = (int **)ft_memalloc((sizeof(int *) * rows));
-	if (!map)
-		return (NULL);
-	while (i < rows)
+	char_count = 0;
+	while (*s)
 	{
-		if(!(*(map + (int)i) = (int *)ft_memalloc((sizeof(int) * columns))))
-			return (NULL);
-		ft_memset(map[i], (int)0, columns);
-		i++;
+		if (*s == c)
+			char_count++;
+		s++;
 	}
-	return (map);
+	return (char_count);
 }
