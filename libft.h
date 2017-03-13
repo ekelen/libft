@@ -83,14 +83,10 @@ void			ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void			ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list			*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
-int				ft_extra_abs(int nbr);
 int				ft_extra_isspace(int c);
 void			ft_extra_lstprint(t_list *lst);
 int				ft_extra_max(int *tab, size_t len);
-char			**ft_strmapnew(size_t rows, size_t columns);
-int				**ft_intmapnew(size_t rows, size_t columns);
 int				ft_countchar(char *s, char c);
-void			ft_err_fd(int fd);
 int				ft_isstn(int c);
 void			ft_putstrmap(char **strmap);
 
