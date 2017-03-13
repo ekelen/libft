@@ -6,7 +6,7 @@
 #    By: ekelen <marvin@42.fr>                      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2016/11/28 18:23:23 by ekelen            #+#    #+#              #
-#    Updated: 2017/03/13 00:20:20 by ekelen           ###   ########.fr        #
+#    Updated: 2017/03/13 12:18:20 by ekelen           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -104,6 +104,7 @@ SRC += ft_extra_max.c
 SRC += ft_countchar.c
 SRC += ft_isstn.c
 SRC += ft_putstrmap.c
+SRC += ft_putendlcolor_fd.c
 
 OBJ = $(SRC:.c=.o)
 

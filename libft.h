@@ -6,7 +6,7 @@
 /*   By: ekelen <ekelen@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2016/11/28 09:33:40 by ekelen            #+#    #+#             */
-/*   Updated: 2017/02/22 21:57:21 by ekelen           ###   ########.fr       */
+/*   Updated: 2017/03/13 12:15:58 by ekelen           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ int				ft_extra_max(int *tab, size_t len);
 int				ft_countchar(char *s, char c);
 int				ft_isstn(int c);
 void			ft_putstrmap(char **strmap);
+void			ft_putendlcolor_fd(char const *s, int fd, char *color, int nl);
 
 #endif
